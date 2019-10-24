@@ -1,22 +1,50 @@
 #include "CPoint.h"
+#include <stdlib.h>
 
-int CPoint::GetX()
+int CPoint::getX()
 {
 	return nX;
 }
 
-int CPoint::GetY()
+int CPoint::getY()
 {
 	return nY;
 }
 
-int CPoint::SetX(int nX)
+void CPoint::setX(int nX)
 {
 	this->nX = nX;
 }
 
-int CPoint::SetY(int y)
+void CPoint::setY(int y)
 {
 	this->nY = nY;
 }
 
+void CPoint::init(int nX, int nY)
+{
+	this->nX = nX;
+	this->nY = nY;
+}
+
+//Constructeur sans paramètre
+CPoint::CPoint()
+{
+	this->nX = 0;
+	this->nY = 0;
+}
+
+//Constructeur avec paramètre(s)
+CPoint::CPoint(int nX, int nY)
+{
+	this->nX = nX;
+	this->nY = nY;
+	this->pnX = new int;
+	*pnX = 0;
+}
+
+//Destructeur
+CPoint::~CPoint()
+{
+	delete pnX;
+}

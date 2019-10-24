@@ -9,15 +9,29 @@ private:
 	int nX;
 	int nY;
 
+	int *pnX;
 
 
 public:
 
-	//Prototypes et déclarations
-	int GetX();
-	int GetY();
-	int SetX(int x);
-	int SetY(int y);
+	//Mutateurs
+	int getX();
+	int getY();
+
+	//Accesseurs
+	void setX(int x);
+	void setY(int y);
+
+	//méthodes
+	void init(int nX, int nY);
+
+	//Constructeurs
+	CPoint();
+
+	CPoint(int nX, int nY);
+
+	//Destructeur
+	~CPoint();
 
 };
 
