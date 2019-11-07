@@ -7,6 +7,8 @@ private:
 	//Coordonnées du point
 	float fX;
 	float fY;
+
+	
 	
 public:
 	//Constructeur
@@ -16,6 +18,7 @@ public:
 	void Deplace(float fMove_x, float fMove_y);
 	void Afficher();
 
+	int getNbrIteration();
 	//Destructeur
 	~Point();
 };

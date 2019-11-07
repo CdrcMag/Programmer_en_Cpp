@@ -9,7 +9,7 @@ using namespace std;
 
 
 int main()
-{
+{/*
 	// Exercice 1 *********************************************************************************************** /
 	
 	//Déclaration d'un point aux coordonées x : 0 et y : 0
@@ -60,9 +60,17 @@ int main()
 
 	//Appel de la méthode d'affichage des coordonnées polaires
 	pt_quatre.AfficherPolaire();
+	*/
 
+	// Exercice 5  *********************************************************************************************** /
 	
-	
+	Point un(0,0);
+	Point deux(2,3);
+	Point trois(89,4);
+
+	cout << "Nbr : " << un.getNbrIteration() << endl;
+
+
 
 
 
