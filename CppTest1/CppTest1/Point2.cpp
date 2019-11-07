@@ -11,7 +11,23 @@ Point2::Point2(float fX, float fY)
 {
 	this->fX = fX;
 	this->fY = fY;
+
+
+	this->distance = sqrt((pow(this->fX, 2)) + (pow(this->fY, 2)));
+	this->angle = (atan(this->fY / this->fX)) * 180 / 3.141592653589;
+
+
 }
+
+//Affichage des coordonnées polaires du point (distance et angle)
+void Point2::AfficherPolaire()
+{
+	cout << "Coordonees polaire : " << this->distance << "(Distance) " << this->angle << "(Angle)" << endl;
+}
+
+
+
+
 
 //Fonction de deplacement en rajoutant x et y aux coordonnées
 void Point2::Deplace(float fMove_x, float fMove_y)

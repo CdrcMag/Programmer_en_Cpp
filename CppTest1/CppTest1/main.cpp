@@ -53,11 +53,15 @@ int main()
 
 	Point2 pt_quatre(3, 3);
 
-	//Retourne la distance entre l'origine et le point
+	//Retourne les coordonnées polaires du point
 	cout << "Coordonees polaire : " << pt_quatre.rho() << "(Distance) " << pt_quatre.theta() << "(Angle)" << endl;
 	
+	// Exercice 4  *********************************************************************************************** /
 
+	//Appel de la méthode d'affichage des coordonnées polaires
+	pt_quatre.AfficherPolaire();
 
+	
 	
 
 
