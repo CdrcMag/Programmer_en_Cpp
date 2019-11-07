@@ -1,4 +1,2 @@
 ﻿  main.cpp
-c:\users\cedri\desktop\cours\3ème année\projets_cpp\cpptest1\cpptest1\main.cpp(20): warning C4305: 'argument' : troncation de 'double' à 'float'
-c:\users\cedri\desktop\cours\3ème année\projets_cpp\cpptest1\cpptest1\main.cpp(33): warning C4305: 'argument' : troncation de 'double' à 'float'
   CppTest1.vcxproj -> C:\Users\cedri\Desktop\Cours\3ème année\Projets_Cpp\CppTest1\Debug\CppTest1.exe

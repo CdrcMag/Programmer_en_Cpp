@@ -2,6 +2,7 @@
 
 
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -18,6 +19,52 @@ void Point2::Deplace(float fMove_x, float fMove_y)
 	this->fX += fMove_x;
 	this->fY += fMove_y;
 }
+
+//Méthode d'homothétie du point
+void Point2::Homothetie(float fRapport)
+{
+	this->fX = this->fX * fRapport;
+	this->fY = this->fY * fRapport;
+}
+
+//Méthode de rotation d'un point en fonction d'un angle, par rapport à l'origine du plan
+void Point2::Rotation(float fAngle)
+{
+	//Transformation de l'angle
+	fAngle *= 3.141592653589 / 180;
+	this->fX = this->fX * cos(fAngle) + this->fY * sin(fAngle);
+	this->fY = -this->fY * sin(fAngle) + this->fY * cos(fAngle);
+
+	//retourne les nouvelles coordonnées du point
+	cout << "X apres rotation : " << round(this->fX) << endl;
+	cout << "Y apres rotation : " << round(this->fY) << endl;
+
+}
+
+//Calcul de la distance 
+float Point2::rho()
+{
+	float distance = sqrt( (pow(fX, 2)) + (pow(fY, 2)) );
+
+
+	return distance;
+}
+
+//Calcul de l'angle
+float Point2::theta()
+{
+	float angle = atan(this->fY / this->fX);
+
+	return angle * 180 / 3.141592653589;
+
+}
+
+
+
+
+
+
+
 
 //Accesseurs
 float Point2::abscisse()

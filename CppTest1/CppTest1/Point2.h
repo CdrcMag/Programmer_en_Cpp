@@ -15,6 +15,10 @@ public:
 	void Deplace(float fMove_x, float fMove_y);
 	float abscisse();//retourne X
 	float ordonnee();//retourne Y
+	void Homothetie(float fRapport);
+	void Rotation(float fAngle);
+	float rho();
+	float theta();
 
 	//Destructeur
 	~Point2();
